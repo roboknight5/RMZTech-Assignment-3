@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+
+    <title>Document</title>
+
+    <style>
+        body {
+            direction: rtl;
+            font-family: "Cairo", sans-serif;
+
+        }
+
+        nav {
+            background-image: url('assets/slide-img-1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* height: 400px; */
+            /* width: 100%; */
+            width: 100%;
+            height: 600px;
+        }
+
+        nav li {
+            list-style: none;
+            padding: 0px 5px;
+            font-family: "Cairo", sans-serif;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .text_color {
+            color: #A6A6A6ff;
+
+        }
+
+        .price_card {
+            background-color: #FFE7ACff;
+            /* color: #CCCCCCff; */
+            color: black;
+            box-shadow: 5px 10px;
+            border: 1px solid black;
+
+
+        }
+
+        .price_card_purple {
+            background-color: #46368Bff;
+            /* color: #CCCCCCff; */
+            color: black;
+
+            box-shadow: 5px 10px;
+            position: relative;
+            bottom: 50px;
+
+            border: 1px solid black;
+        }
+
+        .comment_block {
+            background-color: #F1EFFDff;
+            color: black;
+        }
+    </style>
+</head>
+<!-- Nav Bar -->
+<nav class=" mb-5 text-white">
+    <div class="row py-5 mx-2">
+
+
+        <div class="col d-flex align-items-center ">
+            <img src="assets/رحلاتي .-1.svg" alt="">
+        </div>
+
+        <div class="col d-flex justify-content-center align-items-center">
+
+            <li><a href="">الرحلات</a></li>
+            <li><a href="">الخدمات</a></li>
+            <li><a href="">ألاسعار</a></li>
+            <li><a href="">أراء العملاء</a></li>
+            <li><a href="">اتصل بنا</a></li>
+            </ul>
+        </div>
+
+        <div class="col d-flex justify-content-end align-items-center">
+            يوتيب
+            <img src="assets/youtube.svg" alt="">
+
+        </div>
+
+    </div>
+
+    <div class="text-center">
+        <h1>سافر معنا إلي العالم</h1>
+
+        <p>نوفر لك أفضل الرحلات التي تحتاجها لجميع البلدان
+            <br>
+            و بخجمات مخصصة لك و لعائلتك
+        </p>
+        <div class="btn btn-warning">احجز الأن <img height="25px" src="assets/arrow-1.svg" alt=""></div>
+    </div>
+
+</nav>
+
+<body>
+    <div class="container">
+        <h5 class="text_color">قم بزيارة العالم</h5>
+        <h1>الرحلات الي نقدمها</h1>
+
+        <!-- Carousel wrapper -->
+        <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+            <!-- Controls -->
+            <div class="d-flex justify-content-center mb-4">
+                <!-- <button class="carousel-control-prev position-relative" type="button"
+                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next position-relative" type="button"
+                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+            </div>
+            <!-- Inner -->
+            <div class="carousel-inner py-4">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="">
+                                    <img src="assets/istanbul-img-1.png" class="card-img-top" alt="Waterfall" />
+                                    <div class="bg-light mx-5 rounded rounded-4 p-1"
+                                        style="position: relative; bottom: 120px;">
+                                        <h3>اسطنبول</h3>
+                                        <p>5 أيام بتكلفة 1,500 دولار</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="">
+                                    <img src="assets/dubai-img -1.png" class="card-img-top" alt="Waterfall" />
+                                    <div class="bg-light mx-5 rounded rounded-4 p-1"
+                                        style="position: relative; bottom: 120px;">
+                                        <h3>دبي</h3>
+                                        <p>3 أيام بتكلفة 2,500 دولار</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="">
+                                    <img src="assets/cairo-img-1.png" class="card-img-top" alt="Waterfall" />
+                                    <div class="bg-light mx-5 rounded rounded-4 p-1"
+                                        style="position: relative; bottom: 120px;">
+                                        <h3>القاهرة</h3>
+                                        <p>3 أيام بتكلفة 1,250 دولار</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                Single item
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12">
+                                <div class="card">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
+                                        class="card-img-top" alt="Fissure in Sandstone" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#!" class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
+                                        class="card-img-top" alt="Storm Clouds" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#!" class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
+                                        class="card-img-top" alt="Hot Air Balloons" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#!" class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Single item -->
+                <!-- <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                <div class="card">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp"
+                                        class="card-img-top" alt="Peaks Against the Starry Sky" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#!" class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp"
+                                        class="card-img-top" alt="Bridge Over Water" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#!" class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp"
+                                        class="card-img-top" alt="Purbeck Heritage Coast" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#!" class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- Inner -->
+        </div>
+        <!-- Carousel wrapper -->
+
+        <div class="d-flex justify-content-center text-center">
+            <div>
+                <h5 class="text_color">تمتع في رحلتك</h5>
+                <h1>مجموعة من خدماتنا</h1>
+            </div>
+
+        </div>
+
+        <div class=" p-5  row justify-content-center rounded rounded-4" style="background-color: #F1EFFDff;">
+            <div class="col-3 text-center">
+                <img src="assets/services-icon-01.png" alt="">
+                <h3>دليل سياحي</h3>
+                <p>نقدم لك خدمات إلارشاد السياحي لبناء
+                    <br>
+                    خطط سفر مميزة
+                </p>
+
+            </div>
+
+            <div class="col-3 text-center">
+                <img src="assets/services-icon-02.png" alt="">
+                <h3>حجوزات فندقية</h3>
+                <p>لا تقلق حول مكان إقامتك فنحن نهتم بكامل
+                    <br>
+                    الحجوزات الخاصة بك
+                </p>
+
+
+            </div>
+            <div class="col-3  text-center ">
+                <img src="assets/services-icon-03.png" alt="">
+                <h3>رحلات ميدانية</h3>
+                <p>لن تكون إجازتك مملة معنا فهنا الكثر
+                    <br>
+                    من الخطط و الرحلات الميدانية
+                </p>
+
+
+            </div>
+
+        </div>
+
+        <div class="my-5">
+            <h5 class="text_color">لا تقلق حول التكلفة</h5>
+            <h1>خطط تناسب ميزانيتك</h1>
+        </div>
+
+        <div class=" p-3  row justify-content-center">
+            <div class="col-3 price_card mx-3 p-3 rounded rounded-2">
+                <h1>$260</h1>
+                <h4>خطة اقتصادية</h4>
+                <div class="d-flex align-items-center">
+                    <img src="assets/check-icon.svg" class="mb-3" alt="">
+                    <p class="me-2">نقدم لك إمكانية زيارة البلدان العالم بأقل التكاليف الممكنة و بأفضل الخجمات</p>
+
+                </div>
+
+                <hr>
+                <div class="d-flex text-center align-items-center">
+                    <img src="assets/check-icon.svg" class="mb-3" alt="">
+                    <p class="me-2">بطاقات السفر في الدرجات الاقتصادية</p>
+                </div>
+
+                <div class="d-flex text-center align-items-center">
+                    <img src="assets/check-icon.svg" class="mb-3" alt="">
+                    <p class="me-2">حجز بفندق ثلاث نجوم</p>
+
+                </div>
+
+                <div class="d-flex text-center align-items-center">
+                    <img src="assets/check-icon.svg" class="mb-3" alt="">
+                    <p class="me-2">وجبات إفطار يومية</p>
+
+                </div>
+                <div class="btn btn-outline-dark w-100">احجز الأن <img height="25px" src="assets/arrow-1.svg" alt="">
+                </div>
+
+
+            </div>
+
+            <div class="col-3 price_card_purple rounded rounded-2 mx-3 p-3">
+                <div class="text-white">
+                    <h1>$520</h1>
+                    <h4>خطة عائلية</h4>
+                    <div class="d-flex  align-items-center">
+                        <img src="assets/check-icon.svg" class="mb-3" alt="">
+                        <p class="me-2">هذه خطة مناسبة جدا إن كنت ترغب في قضاء إجازتك مع العائلة</p>
+
+                    </div>
+                    <hr>
+                    <div class="d-flex text-center align-items-center">
+                        <img src="assets/check-icon.svg" class="mb-3" alt="">
+                        <p class="me-2">بطاقات سفر في درجة اولي</p>
+
+                    </div>
+                    <div class="d-flex text-center align-items-center">
+                        <img src="assets/check-icon.svg" class="mb-3" alt="">
+                        <p class="me-2">حجز بفندق اربع نجوم</p>
+
+                    </div>
+                    <div class="d-flex text-center align-items-center">
+                        <img src="assets/check-icon.svg" class="mb-3" alt="">
+                        <p class="me-2">رحلات ميدانية بشكل يومي</p>
+
+                    </div>
+                </div>
+
+                <div class="btn btn-outline-light w-100">احجز الأن <img height="25px" src="assets/arrow-1.svg" alt="">
+                </div>
+
+            </div>
+            <div class="col-3 price_card rounded rounded-2 mx-3 p-3">
+                <h1>$850</h1>
+                <h4>خطة رجل الأعمال</h4>
+                <div class="d-flex text-center align-items-center">
+                    <img src="assets/check-icon.svg" class="mb-3" alt="">
+                    <p class="me-2">كونك شخص ذو ذوق خاص ستكون هذه اللحظة هي ما يناسبك تماما</p>
+
+                </div>
+
+                <hr>
+                <div class="d-flex text-center align-items-center">
+                    <img src="assets/check-icon.svg" class="mb-3" alt="">
+                    <p class="me-2">بطاقات سفر بدرجة رجل الأعمال</p>
+
+                </div>
+                <div class="d-flex text-center align-items-center">
+                    <img src="assets/check-icon.svg" class="mb-3" alt="">
+                    <p class="me-2">حجز بفندق خمس نجوم</p>
+
+                </div>
+                <div class="d-flex text-center align-items-center">
+                    <img src="assets/check-icon.svg" class="mb-3" alt="">
+                    <p class="me-2">متابعة خاصة لإحتجاتك</p>
+
+                </div>
+                <div class="btn btn-outline-dark w-100">احجز الأن <img height="25px" src="assets/arrow-1.svg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center m">
+            <h5 class="text_color">قالوا عنا</h5>
+            <h1>أراء مجموعة من عملائنا</h1>
+        </div>
+
+
+        <div class=" p-5  row justify-content-center ">
+            <div class="col-3 p-2 mx-3 comment_block rounded rounded-4">
+                <div class="d-flex my-2">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+
+                </div>
+                <div class="d-flex align-items-center">
+                    <img width="50px" style="background-color: brown;" class="rounded rounded-5"
+                        src="user-avatar-01-1-removebg.png" alt="">
+                    <h3 class="me-3">محمد أحمد</h3>
+                </div>
+
+                <p>
+                    كانت تجربة مميزة مع خدمات رائعة قضيت أفضل إجازة
+                    لي من فترة طويلة أنصح بالتعامل مع شركة
+                    رحلاتي
+                    بدون تردد
+                </p>
+
+            </div>
+
+            <div class="col-3 mx-2 comment_block p-2 rounded rounded-4">
+                <div class="d-flex my-2">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+
+                </div>
+                <div class="d-flex align-items-center">
+                    <img width="50px" style="background-color: burlywood;" class="rounded rounded-5"
+                        src="user-avatar-02-1-removebg-preview.png" alt="">
+                    <h3 class="me-3">ماهر عبد اللطيف</h3>
+                </div>
+                <p>
+                    تقدم شركة رحلاتي خدمات مناسبة جدا لرجال الأعمال
+
+                    هذا ما ساعدني في رحلتي و جعلني اختصر
+                    جدا من
+
+                    مشاكل الحجوزات
+                </p>
+            </div>
+            <div class="col-3 mx-3 comment_block p-2 rounded rounded-4">
+                <div class="d-flex my-2">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+                    <img src="assets/star-icon-1.svg" alt="">
+
+                </div>
+                <div class="d-flex align-items-center">
+                    <img width="50px" style="background-color: seagreen;" class="rounded rounded-5"
+                        src="user-avatar-03-1-removebg-preview.png" alt="">
+                    <h3 class="me-3">أسامة الأبيض</h3>
+                </div>
+                <p>
+                    يمكنني القول انني قمت بقضاء افضل رحلة عائلة علي الإطلاق كان الفنادق رائعة وخطة السفر ممكتازة جدا و
+                    مريحة
+                </p>
+            </div>
+
+        </div>
+
+        <br>
+        <div class=" p-5  row justify-content-center">
+            <div class="col ">
+                <h5 class="text_color">هل لديك سؤال؟</h5>
+                <h1>يسعدنا التواصل معاك</h1>
+
+                <div class="price_card p-5 rounded rounded-3 mt-3">
+                    <form>
+                        <div class="mb-3">
+                            <h4 for="nameInput" class="form-label">ألاسم</h4>
+                            <input type="text" class="form-control border border-2 border-black" id="nameInput"
+                                aria-describedby="nameHelp" placeholder="يرجي تسجيل اسمك الكامل">
+                        </div>
+                        <div class="mb-3">
+                            <h4 for="exampleInputEmail1" class="form-label">البريد الإلكتروني</h4>
+                            <input type="email" class="form-control border border-2 border-black"
+                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="سجل بريدك الشخصي">
+                        </div>
+
+                        <div class="mb-3">
+                            <h4 for="exampleFormControlTextarea1" class="form-label ">الموضوع</label>
+                                <textarea class="form-control border border-2 border-black mt-2"
+                                    id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="ما هو السؤال او المشكلة التي لديك؟"></textarea>
+                        </div>
+                        <button type="submit" class="btn text-white" style="background-color: black;">أرسل
+                            الرسالة</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center ">
+                <div>
+                    <div class="mb-3 d-flex">
+                        <img height="100px" src="assets/help-icon.png" alt="">
+                        <div class="me-2">
+                            <h3>نقدم لك المساعدة</h3>
+                            <p>إن كان لديك إي المشكلة في البلد الذي تسافر
+                                <br>
+                                إليه سنقوم بسماعدتك في هذا الموضع
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3 d-flex">
+                        <img height="100px" src="assets/communication-icon-1.png" alt="">
+
+                        <div class="me-2">
+                            <h3>للواصل</h3>
+                            <p>يمكن الاتصال معنا عبر الفورم او عبر البريد
+                                <br>
+                                الالكتروني
+                                : company@mail.com
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3 d-flex">
+                        <img height="100px" src="assets/working-hours-icon-1.png" alt="">
+
+                        <div class="me-2">
+                            <h3>أوقات الدوام</h3>
+                            <p>يمكن التواصل معانا معنا يوميا اثناء اوقات الدوام
+                                <br>
+                                من الساعة 9 صباحا حتي 6 مساءا
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+        <!-- Footer -->
+
+        <!-- Footer -->
+
+
+
+    </div>
+
+    <footer class="text-center text-lg-start text-muted " style="background-color: #191919ff;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block text-white">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container  text-md-start mt-5 text-white">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-white">
+                            <i class="fas fa-gem me-3"></i>
+                            <img src="assets/رحلاتي .-1.svg" alt="">
+                        </h6>
+                        <p class="text-white text-end">
+                            شركة متخصصة في مجال الساحة و السفر نقدم خدمات تأمين الرحلات و الحجوزات و الفيزا لكل أنحاء
+                            العامل
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            حول
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">الشركة</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">من نحن؟</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">فرص العمل</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">المدونة</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            خدماتنا
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">بطاقات الطيران</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">الرحلات البحرية</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">الفنادق</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">الرحلات البرية</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">تأمين الفيزا</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            الحجوزات
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">العروض الجديدة</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">تاكد من حجزك </a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">الاشتراكات</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">طرق السفر</a>
+                        </p>
+
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            الموقع
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">ساسية الخصوصية</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">شروط الاستخدام</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">بلغ عن مشكلة</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">الرحلات البرية</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">تواصل معنا</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <!-- <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div> -->
+                    <!-- Grid row -->
+                </div>
+        </section>
+        <!-- Section: Links  -->
+    </footer>
+</body>
+
+</html>
